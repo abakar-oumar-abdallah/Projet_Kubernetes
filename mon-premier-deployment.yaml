@@ -18,3 +18,16 @@ spec:
         ports: 
         - containerPort: 80
 
+# Commande utiliser pour cette partie : 
+
+# kubectl apply -f mon-premier-deployment.yaml -> pour exécuter le fichier yaml et créer le déploiement
+
+# kubectl get all -> pour récupérer les informations sur tout les objets du cluster (pods, services, deployments, etc.)
+
+# kubectl get pods --show-labels -> pour visualiser les hash labels des pods et vérifier que les pods ont bien été créés avec le label "app: nginx"
+
+# kubectl get rs --show-labels -> pour visualiser les hash labels des ReplicaSets et vérifier que les ReplicaSets ont bien été créés avec le label "app: nginx"
+
+# kubectl describe deployments -> pour obtenir des informations détaillées sur le déploiement, y compris l'état actuel, les événements et les stratégies de mise à jour.
+
+# kubectl rollout status deployment/nginx-deployment -> pour vérifier si une mise à jour du déploiement est en cours et si elle a été réussie. 
